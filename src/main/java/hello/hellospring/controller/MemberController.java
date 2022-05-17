@@ -7,10 +7,6 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MemberController {
 
-    private final MemberService memberService;
-
-    @Autowired // 생략 가능
-    MemberController(MemberService memberService) {
-        this.memberService = memberService;
-    }
+    @Autowired private MemberService memberService;
+    
 }
